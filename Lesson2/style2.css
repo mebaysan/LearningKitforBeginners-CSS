@@ -1,0 +1,14 @@
+div{
+    border: 1px solid red; 
+    margin-top: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 150px;
+    background-color: grey;
+    color: black;
+    padding-left: 25px;
+    padding-top: 12px;
+    padding-bottom: 15px; 
+} /* border -> sınır belirler, solid -> bu div'in nasıl olacağını belirler (bu örnekte çizgi şeklinde) ve son olarak rengi verdik.       */
+  /* margin-top -> sayfanın en üstünden aşağı doğru hizalar, margin-left -> sayfayı soldan sağa doğru hizalar, ve tabi takdir edersiniz bunların tam tersi sırasıyla bottom ve right'dır   */
+  /* padding -> ilgili elementin içinde olan değerlerin ona olan uzaklığıdır, ve margin'de olduğu gibi padding'de de right,left,top,bottom vardır   */

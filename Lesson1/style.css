@@ -1,0 +1,19 @@
+/* Yorum satırıdır  */
+h1{ /* h1 -> referans verdiğimiz html dosyasındaki tüm h1 etiketleri   */
+    color: black; /* color -> attribute : parametre -> bütün h1'lerin değeri *** olsun dedik. yani önce attribute verdik : ve değeri ne olacaksa   */
+    background-color: indigo; /* arkaplan özelliğini seçtik.             */
+} /* body background rengi siyah verdik fakat h1 background rengini de indigo verdik. içerdeki etiket dışardakini yener. kendi style'ini alır.        */
+    /* h1 etiketi body etiketinin içinde olduğu için     */
+body{
+    
+    background-color: black;
+}
+p{
+    color: brown;
+}
+div{
+    background-color: gray;
+}
+h3{
+    color: aqua;
+}

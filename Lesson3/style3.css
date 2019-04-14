@@ -1,0 +1,29 @@
+h1{
+    color: red;
+}
+table{ /* bu özellik de sadece table etiketine özel olduğu için buraya yazabiliriz(ayrı olarak), border-collapse:collapse -> çizgileri açma bir araya getir dedik daha hoş göründü      */
+    border-collapse: collapse;
+    width: 100%; /* tablonun genişliğini belirttik, 100% yapmamızın sebebi yüzde yüz genişlettik, böylelikle hangi ekrandan bakılırsa bakılsın kötü gözükmeyecek            */
+
+}
+table,th,td{ /* table,td,th etiketlerinin stillerini ortak belirleyeceğimiz için(zorunluluk değil fakat hoş durması için) üçünün değerini belirledik     */
+    border: 1px solid black;
+
+}
+th{ /*   height -> uzunluğu belirttik ve th(başlıklar)'ların daha hoş görünmesini sağladık       */
+    height: 30px;
+    text-align: left;
+}
+td{
+    height: 20px;
+    text-align: left; /* text-align -> text'lerin nerede olacağını belirledik, left-> sola dayalı             */
+    padding: 5px; /* bağlı olduğu elemente 5px uzaklaştı       */
+}
+tr:hover{ /*  hover-> bir eventtir, üstüne geldiğin zaman demek          */
+    background-color: rebeccapurple;
+}
+tr:nth-child(even){ /* even -> çift demektir, satır numarası çift giderse rengi ne olsun tek giderse (odd) ne olsun         */
+    background-color: red;
+}
+
+

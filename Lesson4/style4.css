@@ -1,0 +1,35 @@
+h2{
+    color: red;
+}
+input[type=text],input[type="password"]{ /* [] -> içine inputlarda type'ı text olanlara uygulasın dedik       */
+    width: 100%;
+    padding: 5px;
+    border: 1px solid green;
+    border-radius: 3px; /* kenarları 3px yuvarladık     */
+    color: blue;
+    background-color: gray;
+}
+/*
+Bir diğer kullanımda ise;
+input[type="password"]{
+    width=100%;
+}
+ayrı bir yerde yapsak yine olurdu :)
+*/
+input[type=text]:focus,input[type="password"]:focus{ /* focus -> buraya tıklayınca ne olacağını yazdık  */
+    background-color: rebeccapurple;
+}
+.myClass{ /* kendi class'ımızı oluşturduk. Burda önemli olan şey, kendi class'ımızı oluştururken '.' ile başlamamızdır!     */
+    color: red;
+    background-color: whitesmoke;
+}
+p.denemeClass{ /* p elementlerine özel bir class yazdık. bunu h1 bir element kullanamaz.          */
+    color: black;
+    background-color: beige;
+}
+/*  Yazdığımız myClass'ı BÜTÜN ELEMENTLERde kullanabiliriz fakat denemeClass'ı SADECE P elementlerinde kullanabiliriz!        */
+
+#idYapisi:hover{ /* belirli bir id'e özel css yazarken '#' işaretinden yararlanırız. #idAdi         */
+    background-color: blueviolet;
+    color: cadetblue;
+}
