@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Id ve Class'lar</title>
+    <style>
+      p {
+        color: purple !important;
+        font-size: 18px; /* id ve class seviyesindeki seçimlerde, element seviyesindeki seçimleri ezer */
+      }
+      .kirmizi_p {
+        /* class'ı kirmizi_p olan'ı seçtik */
+        color: red !important; /* !important önceliği kendisine alır ve ezilemeyen bir attr olur */
+        font-size: 22px;
+      }
+      #mavi_p {
+        /* id'si mavi_p olanı seçtik  */
+        color: blue;
+        font-size: 22px;
+      }
+      #header{
+          font-size: 45px;
+          border: red dotted 1px; /* renk çizgi-tipi çizgi-boyutu */
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="header">Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, enim.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, enim.</p>
+    <p class="kirmizi_p">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, enim.
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, enim.</p>
+    </p>
+    <p id="mavi_p">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, enim.
+    </p>
+  </body>
+</html>

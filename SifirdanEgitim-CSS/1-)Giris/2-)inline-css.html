@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inline CSS</title>
+    <style>
+      p {
+        color: teal;
+        font-size: 20px;
+        text-align: left;
+      }
+      h1 {
+        border: 1px solid red;
+        /* border -> çizgi ekler: çizgi_piksel_boyutu çizgi_tipi çizgi_rengi;  */
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="border:none">Web Geliştirme</h1>
+    <!-- border:none; internal'den gelen borderı yok ettik (inline ile)   -->
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam,
+      aspernatur?
+    </p>
+    <p style="color: red;">
+      <!-- buna inline css denir. satır bazında değişiklik yapacaksak 
+        inline css'ler, internal css'leri ezer -->
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam,
+      aspernatur?
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam,
+      aspernatur?
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam,
+      aspernatur?
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam,
+      aspernatur?
+    </p>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+/*
+    Bütün sayfalarda bu css dosyasını kullandığımız ve bütün sayflardan bu css çağırıldığı için
+    buna "external css" denir.
+*/
+a {
+  color: red;
+  text-decoration: none; /* etiketin altındaki çizgiyi siler */
+}
+li {
+  display: inline; /* varsayılan olarak blok olan displayi inline'a çektik ve etiketler yan yana oldu */
+}
+h1 {
+  color: cornflowerblue;
+}
