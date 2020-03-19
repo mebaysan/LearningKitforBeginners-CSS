@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Group Selectors</title>
+  </head>
+  <style>
+    /* '*' sayfadaki body dahil bütün elementleri seçmemizi sağlar  */
+    /* 
+    * { 
+      border: blue 1px dotted;
+    } 
+    */
+    .container p {
+      /* class'ı container olan element içerisindeki p elementlerini seçtik */
+      border: 1px dotted blue;
+    }
+    div.box p {
+      /* box class'lı div altındaki p elementleri  */
+      border: 1px solid red;
+    }
+    div.container .box {
+      /* container class'lı div'in altındaki box class'lı elementler  */
+      border: 1px double orange;
+    }
+    .box {
+      border: 1px solid orchid;
+    }
+    div,
+    p {
+      /* sayfadaki tüm div ve p elementleri */
+      color: purple;
+    }
+    div > p {
+      /*  bir üst elemanı div olanları seç */
+      color: black;
+    }
+    p ~ div { /* p etiketiyle aynı seviyede olan div etiketlerini seç  */
+      font-size: 20px;
+    }
+    p+div{ /* p etiketinden sonra gelen ilk divi seç */
+        font-size: 30px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <p class="p1">.container > paragraf 1</p>
+      <p class="p1">.container > paragraf 2</p>
+      <div class="box">
+        .container > box 1
+        <p>.container > box > paragraf 3</p>
+        <p>.container > box > paragraf 4</p>
+      </div>
+      <div class="box">
+        .container > box 2
+      </div>
+      <div>
+        .container > div
+      </div>
+    </div>
+    <p>paragraf 5</p>
+    <p>paragraf 6</p>
+    <div class="box">box 4</div>
+    <div class="box">box 5</div>
+  </body>
+</html>

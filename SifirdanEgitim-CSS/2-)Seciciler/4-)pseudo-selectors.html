@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Selectors</title>
+    <style>
+      /*
+                Pseudo Element
+        bir elementin bir parçasını seçmek istediğimizde pseudo element kullanırız
+       */
+
+      p::first-line {
+        /* sayfadaki tüm p elementlerinin ilk satırını seç (:: 'çift nokta') */
+        color: brown;
+        word-spacing: 2px; /* kelimeler arasındaki mesafe */
+        letter-spacing: 1px; /* harfler arasındaki mesafe */
+        font-weight: bold;
+      }
+      p::first-letter {
+        /* p elemanlarının ilk harfi */
+        font-size: 48px;
+      }
+      p::after {
+        /* her p elemanından sonra */
+        content: "- Yazar";
+        display: block;
+        background-color: yellow;
+      }
+      /*
+                Pseudo Class
+        bir kapsam içerisindeki elemanı seçerken pseudo class kullanırız
+        örnek -> ul altındaki li'lerden biri
+        (: 'tek nokta')
+       */
+      ul li:first-child {
+        /* ul içerisindeki li'lerden ilki */
+        font-weight: bold;
+      }
+      ul li {
+        padding-top: 10px;
+        margin-top: 5px;
+      }
+      ul li:last-child {
+        /* ul içerisindeki li'lerden sonuncusu */
+        font-weight: bold;
+      }
+      ul li:nth-of-type(even) {
+        /* ul içerisindeki li'lerden sıra numarası çift olanlar */
+        border: 2px solid red;
+      }
+      ul li:nth-of-type(odd) {
+        /* ul içerisindeki li'lerden sıra numarası tek olanlar */
+        border: 2px dotted blue;
+      }
+      a {
+        padding: 5px 8px;
+        text-decoration: none;
+        display: block;
+        width: 80px;
+        border: 1px solid gray;
+        margin-bottom: 10px;
+      }
+      a:link {
+        /* a etiketi link halindeyken */
+        color: red;
+      }
+      a:visited {
+        /* a etiketi daha önce tıklanmış ise */
+        color: gray;
+      }
+      a:hover {
+        /* a etiketi üzerine mouse gelince */
+        color: white;
+        background-color: green;
+      }
+      a:active {
+        /* a etiketi aktif olduğunda */
+        color: green;
+        background-color: gold;
+      }
+      span {
+        display: none;
+        background: yellow;
+        padding: 20px;
+      }
+      div:hover span { /* div üzerine hover olunca, span etiketi için kod yazıyoruz */
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pseudo Selectors</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. In vitae corrupti
+      nostrum, nulla at voluptatem ducimus necessitatibus sequi, facilis ab,
+      culpa hic modi similique impedit explicabo distinctio expedita velit
+      repellendus. Ad, cupiditate amet. Aut unde, nostrum magnam nihil
+      consectetur, ipsa consequatur excepturi amet quis ut a accusamus!
+      Architecto, vitae numquam?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. In vitae corrupti
+      nostrum, nulla at voluptatem ducimus necessitatibus sequi, facilis ab,
+      culpa hic modi similique impedit explicabo distinctio expedita velit
+      repellendus. Ad, cupiditate amet. Aut unde, nostrum magnam nihil
+      consectetur, ipsa consequatur excepturi amet quis ut a accusamus!
+      Architecto, vitae numquam?
+    </p>
+    <ul>
+      <li>first</li>
+      <li>second</li>
+      <li>third</li>
+      <li>fourth</li>
+      <li>fifth</li>
+    </ul>
+    <a href="./3-)attribute-selector.html" target="_blank">a:link</a>
+    <a href="./3-)attribute-selector.html" target="_blank">a:visited</a>
+    <a href="./3-)attribute-selector.html" target="_blank">a:hover</a>
+    <a href="./3-)attribute-selector.html" target="_blank">a:active</a>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. In vitae corrupti
+      nostrum, nulla at voluptatem ducimus necessitatibus sequi, facilis ab,
+      culpa hic modi similique impedit explicabo distinctio expedita velit
+      repellendus.
+      <span
+        >Ad, cupiditate amet. Aut unde, nostrum magnam nihil consectetur, ipsa
+        consequatur excepturi amet quis ut a accusamus! Architecto, vitae
+        numquam?</span
+      >
+    </div>
+  </body>
+</html>

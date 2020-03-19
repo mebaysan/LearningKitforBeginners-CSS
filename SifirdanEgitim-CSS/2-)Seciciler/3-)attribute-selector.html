@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute Selector</title>
+    <style>
+      a[href^="http"] {
+        /* href attr'i 'http' ile başlayan a etiketini seç (^='http')  ~='http' -> içinde http olan demek  */
+        color: red;
+      }
+      a[href$="com"][target="_blank"] {
+        /* href attr'i com ile biten ve target'i blank olan a etiketini seç */
+        color: blue;
+      }
+      input {
+        display: block;
+        width: 150px;
+        margin-top: 15px;
+      }
+      input[type="text"]{ /* type'i text olan input'u/input'ları seç */
+          background-color: yellowgreen;
+      }
+      input[type="submit"]{
+          background-color: green;
+          color: white;
+          padding: 8px 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="http://baysansoft.com/">Bilgi Al</a>
+    <form action="">
+      <input type="text" placeholder="Adınız" />
+      <input type="submit"></input>
+    </form>
+  </body>
+</html>
