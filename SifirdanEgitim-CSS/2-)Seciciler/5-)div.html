@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Div</title>
+  </head>
+  <style>
+    #section-one {
+      color: yellow;
+      background-color: royalblue;
+      width: 30%;
+      margin: 0px;
+      padding: 0px;
+      float: left;
+      height: 150px;
+      overflow: scroll;
+      /* height 150px ile sabit yükseklik belirledik. 
+         Bu sebeple bazı elementler taşınca bu divden çıkacak. bizde overflow diyerek 
+         aşırı yüklenirse scroll bar çıkarmasını söyledik 
+      */
+    }
+    #section-two {
+      color: green;
+      background-color: aqua;
+      width: 70%;
+      margin: 0px;
+      padding: 0px;
+      float: left;
+      height: 150px;
+    }
+  </style>
+  <body>
+    <h1>Lorem, ipsum dolor</h1>
+    <div id="section-one">
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <div id="section-two">
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+  </body>
+</html>
