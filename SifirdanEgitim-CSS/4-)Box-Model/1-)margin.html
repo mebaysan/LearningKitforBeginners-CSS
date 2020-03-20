@@ -5,30 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Margin</title>
     <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+
       div {
-        width: 250px;
-        height: 250px;
-        background-color: red;
-        margin: 5px;
+        width: 100px;
+        height: 100px;
+        float: left;
+        margin-right: 20px; /* her div kendi sağından 20px boşluk bırakır */
+        margin-top: 50px;
       }
       #first {
-         display: none; /* -> görünmez yapar  */
+        background-color: red;
+        /* margin: 10px 10px 40px 100px;  saat yönünde başlar ( top,right,bottom,left) */
       }
       #second {
+        background-color: green;
       }
-      span {
+      #third {
         background-color: blue;
-        width: 100px;
-        height: 150px;
-        display: inline-block;
-        color: white;
-        text-align: center;
+        margin: auto; /* tam ortaya alır */
+        /* margin: 10px 100px;  top-bottom / right-left -> 2 değer verirsek yukarı aşağı ve sağ sol olarak alır */
       }
     </style>
   </head>
   <body>
     <div id="first"></div>
     <div id="second"></div>
-    
+    <div id="third"></div>
   </body>
 </html>
