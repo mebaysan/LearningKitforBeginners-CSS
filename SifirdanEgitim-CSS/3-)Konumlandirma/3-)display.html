@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display</title>
+    <style>
+      div {
+        width: 250px;
+        height: 250px;
+        background-color: red;
+        margin: 5px;
+      }
+      #first {
+         display: none; /* -> görünmez yapar  */
+      }
+      #second {
+      }
+      span {
+        background-color: blue;
+        width: 100px;
+        height: 150px;
+        display: inline-block;
+        color: white;
+        text-align: center;
+      }
+      span:hover {
+        background-color: teal;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="first"></div>
+    <div id="second"></div>
+    <span>Lorem, ipsum dolor.</span>
+    <span>Lorem, ipsum dolor.</span>
+  </body>
+</html>
